@@ -2,7 +2,7 @@ const withMDX = require("@next/mdx")();
 const withPWA = require("next-pwa")({
   dest: "public",
 });
-console.log(process.env.CONVEX_URL);
+
 const {
   CONVEX_URL,
   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,
