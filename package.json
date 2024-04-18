@@ -3,8 +3,9 @@
   "private": true,
   "scripts": {
     "build": "dotenv -e .env -- turbo build",
-    "build:web": "dotenv -e .env -- turbo build --filter web",
-    "dev": "dotenv -e .env.local -- turbo dev",
+    "build:web": "dotenv -e .env -- turbo build --filter=web",
+    "dev": "dotenv -e .env.local -- turbo dev --filter=web",
+    "dev:web": "dotenv -e .env -- turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
@@ -19,6 +20,7 @@
     "node": ">=18"
   },
   "dependencies": {
+    "convex": "^1.8.0",
     "dotenv-cli": "^7.4.1"
   }
 }
