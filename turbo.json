@@ -13,5 +13,20 @@
       "cache": false,
       "persistent": true
     }
-  }
+  },
+  "globalEnv": [
+    "NEXT_PUBLIC_CONVEX_URL",
+    "CONVEX_URL",
+    "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY",
+    "CLERK_SECRET_KEY",
+    "OPENAI_API_KEY",
+    "PERPLEXITY_API_KEY",
+    "FIREWORKS_API_KEY",
+    "STABILITY_API_KEY",
+    "MISTRAL_API_KEY",
+    "NEXT_PUBLIC_CLERK_SIGN_IN_URL",
+    "NEXT_PUBLIC_CLERK_SIGN_UP_URL",
+    "NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL",
+    "NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL"
+  ]
 }

@@ -10,9 +10,7 @@ import CrystalDialog from "./crystal-dialog";
 import PaymentDialog from "./crystals/payment-dialog";
 import { dark } from "@clerk/themes";
 
-const convex = new ConvexReactClient(
-  process.env.NEXT_PUBLIC_CONVEX_URL as string,
-);
+const convex = new ConvexReactClient(process.env.CONVEX_URL as string);
 
 export function AuthenticationProvider({
   children,

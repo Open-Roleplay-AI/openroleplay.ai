@@ -2,8 +2,9 @@
   "name": "openroleplay",
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
+    "build": "dotenv -e .env -- turbo build",
+    "build:web": "dotenv -e .env -- turbo build --filter web",
+    "dev": "dotenv -e .env.local -- turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
@@ -16,5 +17,8 @@
   "packageManager": "pnpm@8.9.0",
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv-cli": "^7.4.1"
   }
 }
